@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0fff0; /* sanft sommerlich */
+    color: #2f4f4f;
+}
+
+/* === Sidebar Grundstruktur === */
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #004d40; /* dunkelgrün */
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1000;
+}
+
+/* Sidebar offen (nach Klick) */
+.sidebar.open {
+    width: 220px;
+    align-items: flex-start;
+}
+
+/* === Hamburger Icon === */
+.hamburger {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0 18px;
+    align-self: flex-start;
+}
+
+/* === Sidebar Links === */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #00695c;
+}
+
+/* === Emoji === */
+.sidebar a .emoji {
+    width: 60px;               /* Feste Breite für Icon-Zone */
+    text-align: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* === Text (ausfahrbar) === */
+.sidebar a .text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* === Wenn Sidebar offen, Text sichtbar & gelb === */
+.sidebar.open a .text {
+    opacity: 1;
+    color: #fff176; /* gelb */
+    padding-right: 20px;
+}
+
+/* === Inhaltsbereich === */
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Wenn Sidebar offen → Content rutscht mit */
+.sidebar.open ~ .content {
+    margin-left: 220px;
+}
+
+/* === Textelemente === */
+h1 {
+    color: #00695c;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #6a5acd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #483d8b;
+    text-decoration: underline;
+}
+
+/* === Responsive: Mobile Ansicht === */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .sidebar.open {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar.open a {
+        justify-content: flex-start;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    .sidebar.open ~ .content {
+        margin-left: 0;
+    }
+}
