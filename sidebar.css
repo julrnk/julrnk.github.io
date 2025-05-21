@@ -10,7 +10,7 @@ body {
 /* === Sidebar Grundstruktur === */
 .sidebar {
     height: 100vh;
-    width: 60px;
+    width: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,10 +32,10 @@ body {
 
 /* === Hamburger Icon === */
 .hamburger {
-    font-size: 26px;
+    font-size: 2.4rem;
     color: white;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 16px 15.3px;
     padding: 0 18px;
     align-self: flex-start;
 }
@@ -58,9 +58,8 @@ body {
 
 /* === Emoji === */
 .sidebar a .emoji {
-    width: 60px;               /* Feste Breite für Icon-Zone */
+    width: 100px;               /* Feste Breite für Icon-Zone */
     text-align: center;
-    font-size: 18px;
     flex-shrink: 0;
 }
 
