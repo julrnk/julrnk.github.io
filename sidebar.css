@@ -91,6 +91,11 @@ body {
     margin-left: 220px;
 }
 
+
+.sidebarSelection{
+    background-color: #1b8964;
+}
+
 /* === Textelemente === */
 h1 {
     color: #00695c;
