@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f0fff0; /* sanft sommerlich */
-    color: #2f4f4f;
-}
 
 /* === Sidebar Grundstruktur === */
 .sidebar {
@@ -14,7 +6,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #004d40; /* dunkelgrün */
+    background-color: #555958;
     overflow-x: hidden;
     transition: width 0.3s ease;
     display: flex;
@@ -71,25 +63,12 @@ body {
     overflow: hidden;
 }
 
-/* === Wenn Sidebar offen, Text sichtbar & gelb === */
+/* === Wenn Sidebar offen, Text sichtbar === */
 .sidebar.open a .text {
     opacity: 1;
-    color: #fff176; /* gelb */
+    color: #ffffff;
     padding-right: 20px;
 }
-
-/* === Inhaltsbereich === */
-.content {
-    margin-left: 60px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-}
-
-/* Wenn Sidebar offen → Content rutscht mit */
-.sidebar.open ~ .content {
-    margin-left: 220px;
-}
-
 
 .sidebarSelection{
     background-color: #1b8964;
