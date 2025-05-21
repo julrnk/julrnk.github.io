@@ -26,7 +26,7 @@ body {
 
 /* Sidebar offen (nach Klick) */
 .sidebar.open {
-    width: 220px;
+    width: 300px;
     align-items: flex-start;
 }
 
@@ -47,7 +47,7 @@ body {
     height: 50px;
     width: 100%;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
