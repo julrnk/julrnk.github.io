@@ -1,20 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f0fff0; /* sanft sommerlich */
-    color: #2f4f4f;
-}
 
 /* === Sidebar Grundstruktur === */
 .sidebar {
     height: 100vh;
-    width: 60px;
+    width: 100px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #004d40; /* dunkelgrün */
+    background-color: #555958;
     overflow-x: hidden;
     transition: width 0.3s ease;
     display: flex;
@@ -26,16 +18,16 @@ body {
 
 /* Sidebar offen (nach Klick) */
 .sidebar.open {
-    width: 220px;
+    width: 300px;
     align-items: flex-start;
 }
 
 /* === Hamburger Icon === */
 .hamburger {
-    font-size: 26px;
+    font-size: 2.4rem;
     color: white;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 16px 15.3px;
     padding: 0 18px;
     align-self: flex-start;
 }
@@ -47,7 +39,7 @@ body {
     height: 50px;
     width: 100%;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -58,9 +50,8 @@ body {
 
 /* === Emoji === */
 .sidebar a .emoji {
-    width: 60px;               /* Feste Breite für Icon-Zone */
+    width: 100px;               /* Feste Breite für Icon-Zone */
     text-align: center;
-    font-size: 18px;
     flex-shrink: 0;
 }
 
@@ -72,23 +63,15 @@ body {
     overflow: hidden;
 }
 
-/* === Wenn Sidebar offen, Text sichtbar & gelb === */
+/* === Wenn Sidebar offen, Text sichtbar === */
 .sidebar.open a .text {
     opacity: 1;
-    color: #fff176; /* gelb */
+    color: #ffffff;
     padding-right: 20px;
 }
 
-/* === Inhaltsbereich === */
-.content {
-    margin-left: 60px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-}
-
-/* Wenn Sidebar offen → Content rutscht mit */
-.sidebar.open ~ .content {
-    margin-left: 220px;
+.sidebarSelection{
+    background-color: #1b8964;
 }
 
 /* === Textelemente === */
