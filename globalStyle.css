@@ -3,8 +3,8 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #ffffff; /* sanftes Grün (Honeydew) */
-    color: #2f4f4f;
+    background-color: #efefef; /* sanftes Grün (Honeydew) */
+    color: #202020;
 }
 
 .content {
@@ -26,37 +26,16 @@ body {
 }
 
 h1 {
-    color: #2f4f4f;
+    color: #635f65;
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
 }
 
-p, ul {
+p {
     font-size: 1.05em;
     line-height: 1.6em;
     margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 12px 0;
-    text-align: center;
-}
-
-ul li a {
-    color: #6a5acd;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    color: #483d8b;
-    text-decoration: underline;
 }
 
 iframe {
