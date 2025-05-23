@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #efefef; /* sanftes Grün (Honeydew) */
+    background-color:rgb(255, 255, 255); /* sanftes Grün (Honeydew) */
     color: #202020;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    color: #635f65;
+    color: #ffffff;
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
