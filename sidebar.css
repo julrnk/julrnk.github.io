@@ -18,7 +18,7 @@
 
 /* Sidebar offen (nach Klick) */
 .sidebar.open {
-    width: 300px;
+    width: 370px;
     align-items: flex-start;
 }
 
